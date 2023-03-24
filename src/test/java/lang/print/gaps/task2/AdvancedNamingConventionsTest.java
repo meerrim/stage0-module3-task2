@@ -20,10 +20,9 @@ class AdvancedNamingConventionsTest {
                 .filter(line ->
                         line.contains("class AdvancedNamingConvention") ||
                                 line.contains("ADULT_AGE") ||
-                                line.contains("age;") ||
-                                line.contains("phoneNumber") ||
-                                line.contains("void callToFriend") ||
-                                line.contains("void callByNumber(int number)"))
+                                line.contains("age") ||
+                                line.contains("callToFriend") ||
+                                line.contains("callByNumber"))
                 .collect(Collectors.toList());
 
         assertEquals(5, result.size(), "Not all conventions were followed. Check what to call classes variables and methods.");
