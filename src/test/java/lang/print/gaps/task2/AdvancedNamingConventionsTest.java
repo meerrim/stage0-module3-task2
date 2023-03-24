@@ -21,6 +21,7 @@ class AdvancedNamingConventionsTest {
                         line.contains("class AdvancedNamingConvention") ||
                                 line.contains("ADULT_AGE") ||
                                 line.contains("age;") ||
+                                line.contains("phoneNumber") ||
                                 line.contains("void callToFriend") ||
                                 line.contains("void callByNumber(int number)"))
                 .collect(Collectors.toList());
